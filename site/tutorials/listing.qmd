@@ -1,0 +1,12 @@
+---
+title: "Tutorials"
+listing:
+  type: table
+  categories: true
+  fields: [title, subtitle ,author, date, categories ,reading-time]
+author: 
+ - name: Lisanne Nauta
+   email: lisanne.nauta@wur.nl  
+---
+
+

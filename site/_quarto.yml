@@ -1,0 +1,49 @@
+project:
+  type: website
+
+website:
+  title: "WSG Data & Software"
+  navbar:
+    pinned: true
+    background: green
+    right:
+      - href: index.qmd
+        text: Home
+      - href: onboarding.qmd
+        text: Onboarding 
+      - sidebar:tutorials
+      - href: training.qmd
+        text: Training
+      - href: support.qmd
+        text: Support
+  sidebar: 
+    - id: tutorials
+      title: Tutorials
+      icon: book
+      background: floralwhite
+      contents: 
+        - icon: book-fill
+          text: <strong>Tutorials</strong>
+          href: tutorials/listing.qmd
+        - section: <strong>HPC</strong>
+          icon: cpu-fill
+          contents:
+          - auto: tutorials/hpc/*.qmd
+        - section: <strong>Git</strong>
+          icon: github
+        - section: <strong>Data</strong>
+          icon: database-fill
+        - section: <strong>GenAI</strong>
+          icon: openai
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+    backgroundcolor: floralwhite
+
+
+
